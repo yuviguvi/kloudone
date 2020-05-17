@@ -191,15 +191,15 @@ def play_as(game, color):
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE or event.key == 113:
                         run = False
-                    if event.key == 104 and ongoing: # H key
+                    if event.key == 104 and ongoing: 
                         game = make_AI_move(game, color)
-                    if event.key == 117: # U key
+                    if event.key == 117: 
                         game = chess.unmake_move(game)
                         game = chess.unmake_move(game)
                         set_title(SCREEN_TITLE)
                         print_board(game.board, color)
                         ongoing = True
-                    if event.key == 99: # C key
+                    if event.key == 99: 
                         global BOARD_COLOR
                         new_colors = deepcopy(BOARD_COLORS)
                         new_colors.remove(BOARD_COLOR)
@@ -208,9 +208,9 @@ def play_as(game, color):
                     if event.key == 112 or event.key == 100: # P or D key
                         print(game.get_move_list() + '\n')
                         print('\n'.join(game.position_history))
-                    if event.key == 101: # E key
+                    if event.key == 101:
                         print('eval = ' + str(chess.evaluate_game(game)/100))
-                    if event.key == 106: # J key
+                    if event.key == 106:
                         joker += 1
                         if joker == 13 and chess.get_queen(game.board, color):
                             queen_index = chess.bb2index(chess.get_queen(game.board, color))
