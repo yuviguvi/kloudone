@@ -1,0 +1,240 @@
+#USING OPERATOR AND EXPRESSION QUERY
+
+
+postgres=# select current_timestamp;
+
+               now
+----------------------------------
+ 2020-05-19 21:13:25.768838+05:30
+(1 row)
+
+
+postgres=# select (20+21) AS ADDITION;
+ addition
+----------
+       41
+
+
+##FUNC_NUMERIC ####
+
+
+postgres=# select ABS(2);
+ abs
+-----
+   2
+(1 row)
+
+
+postgres=# select ACOS(1);
+ acos
+------
+    0
+(1 row)
+
+
+postgres=# select ASIN(1);
+      asin
+-----------------
+ 1.5707963267949
+(1 row)
+
+
+postgres=# select ATAN(1);
+       atan
+-------------------
+ 0.785398163397448
+(1 row)
+
+
+postgres=# select ATAN2(3,6);
+       atan2
+-------------------
+ 0.463647609000806
+(1 row)
+
+
+postgres=# select CEILING(3.46);
+ ceiling
+---------
+       4
+(1 row)
+
+
+postgres=# select CEIL(-6.43);
+ ceil
+------
+   -6
+(1 row)
+
+
+postgres=# select COS(90);
+        cos
+-------------------
+ -0.44807361612917
+(1 row)
+
+
+postgres=# select COT(2);
+        cot
+--------------------
+ -0.457657554360286
+(1 row)
+
+
+postgres=# select DEGREES(PI());
+ degrees
+---------
+     180
+(1 row)
+
+
+postgres=# select EXP(3);
+       exp
+------------------
+ 20.0855369231877
+(1 row)
+
+
+postgres=# select FLOOR(7.55);
+ floor
+-------
+     7
+(1 row)
+
+
+postgres=# select GREATEST(5,1,3,55,22,4,2);
+ greatest
+----------
+       55
+(1 row)
+
+
+postgres=# select LEAST(5,1,3,55,22,4,2);
+ least
+-------
+     1
+(1 row)
+
+
+postgres=# select LOG(45);
+       log
+------------------
+ 1.65321251377534
+(1 row)
+
+
+postgres=# select MOD(29,3);
+ mod
+-----
+   2
+(1 row)
+
+
+postgres=# select PI();
+        pi
+------------------
+ 3.14159265358979
+(1 row)
+
+
+postgres=# select POWER(3,3);
+ power
+-------
+    27
+(1 row)
+
+
+postgres=# select RADIANS(90);
+     radians
+-----------------
+ 1.5707963267949
+(1 row)
+
+
+postgres=# select ROUND(5.6872);
+ round
+-------
+     6
+(1 row)
+
+
+postgres=# select SIGN(-4.65);
+ sign
+------
+   -1
+(1 row)
+
+
+postgres=# select SQRT(49);
+ sqrt
+------
+    7
+(1 row)
+
+
+postgres=# select TAN(45);
+       tan
+------------------
+ 1.61977519054386
+(1 row)
+
+
+####STRING FUNCTION######
+
+
+
+postgres=# select ASCII('2');
+ ascii
+-------
+    50
+(1 row)
+
+
+postgres=# select BIT_LENGTH('text');
+ bit_length
+------------
+         32
+(1 row)
+
+
+postgres=# select CHAR_LENGTH('text');
+ char_length
+-------------
+           4
+(1 row)
+
+
+postgres=# select CONCAT('post','gres','q','l');
+   concat
+------------
+ postgresql
+(1 row)
+
+
+postgres=# select LEFT('yuvashree',5);
+ left
+-------
+ yuvas
+(1 row)
+
+
+postgres=# select LOWER('YUVASHREE');
+   lower
+-----------
+ yuvashree
+(1 row)
+
+
+postgres=# SELECT LPAD('hi',4,'??');
+ lpad
+------
+ ??hi
+(1 row)
+
+
+postgres=# select LTRIM('  barbar');
+ ltrim
+--------
+ barbar
+(1 row)
+

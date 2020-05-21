@@ -1,0 +1,83 @@
+######	 DATE/TIME FUNCTION   #######
+postgres=# SELECT AGE(timestamp '2001-04-10', timestamp '1957-06-13');
+           age
+-------------------------
+ 43 years 9 mons 27 days
+(1 row)
+
+
+postgres=# select age(timestamp '1957-06-13');
+           age
+-------------------------
+ 62 years 11 mons 8 days
+(1 row)
+
+
+postgres=# SELECT CURRENT_TIME;
+        timetz
+-----------------------
+ 10:25:26.604112+05:30
+(1 row)
+
+
+postgres=# SELECT CURRENT_DATE;
+    date
+------------
+ 2020-05-21
+(1 row)
+
+
+postgres=# SELECT CURRENT_TIMESTAMP;
+               now
+----------------------------------
+ 2020-05-21 10:26:10.128142+05:30
+(1 row)
+
+
+postgres=# SELECT CURRENT_TIMESTAMP(2);
+         timestamptz
+------------------------------
+ 2020-05-21 10:26:26.09+05:30
+(1 row)
+
+
+postgres=#  SELECT LOCALTIMESTAMP;
+         timestamp
+----------------------------
+ 2020-05-21 10:26:46.634086
+(1 row)
+
+postgres=# SELECT date_part('day', TIMESTAMP '2001-02-16 20:38:40');
+ date_part
+-----------
+        16
+(1 row)
+
+
+postgres=#  SELECT date_trunc('hour', TIMESTAMP '2001-02-16 20:38:40');
+     date_trunc
+---------------------
+ 2001-02-16 20:00:00
+(1 row)
+
+
+postgres=#  SELECT EXTRACT(CENTURY FROM TIMESTAMP '2000-12-16 12:21:13');
+ date_part
+-----------
+        20
+(1 row)
+
+
+
+postgres=# SELECT isfinite(timestamp '2001-02-16 21:28:30');
+ isfinite
+----------
+ t
+(1 row)
+
+
+postgres=# SELECT justify_hours(interval '27 hours');
+ justify_hours
+----------------
+ 1 day 03:00:00
+(1 row)
