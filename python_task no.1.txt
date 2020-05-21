@@ -1,0 +1,164 @@
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print("built-in functions")
+built-in functions
+>>> integer=-20
+>>> print("absolute value of-40:",abs(integer))
+absolute value of-40: 20
+>>> floating=-20.2
+>>> print("absolute value of -40:",abs(floating))
+absolute value of -40: 20.2
+>>> Yuvi=[1,9,9,8]
+>>> print(all(Yuvi))
+True
+>>> Yuvi=[]
+>>> print(all(Yuvi))
+True
+>>> yuvi=[6,False]
+>>> print(all(yuvi))
+False
+>>> x=6
+>>> y=bin(x)
+>>> print(y)
+0b110
+>>> string="kloudone"
+>>> array=bytes(string,"utf-8")
+>>> print(array)
+b'kloudone'
+>>> 
+====================== RESTART: C:/Python/Python38/task.py =====================
+True
+>>> x=7
+>>> exec('print(x+3)')
+10
+>>> s=sum([1,2,3,4])
+>>> print(s)
+10
+>>> ascii='welcome'
+>>> print(ascii)
+welcome
+>>> m=22
+>>> print(eval('m-1'))
+21
+>>> print(float(12))
+12.0
+>>> n=12.2
+>>> print(format(n,"f"))
+12.200000
+>>> age=18
+>>> globals()['age']=18
+>>> print('age is:',age)
+age is: 18
+>>> str='kloudone'
+>>> print(len(str))
+8
+>>> n=(1,2,3,3)
+>>> print(list(n))
+[1, 2, 3, 3]
+>>> 
+>>> list=(1,2,3)
+>>> listiter=iter(list)
+>>> print(next(listiter))
+1
+>>> python=object()
+>>> print(type(python))
+<class 'object'>
+>>> print(chr(84),chr(85))
+T U
+>>> num=(1,2,3)
+>>> result=map(lambda x: x+x,num)
+>>> print(list(result))
+[2, 4, 6]
+>>> b=complex(1)
+>>> print(b)
+(1+0j)
+>>> att=dir()
+>>> print(att)
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'b', 'num', 'result']
+>>> result=divmod(10,2)
+>>> print(result)
+(5, 0)
+>>> result=enumerate([1,2,3])
+>>> print(list(result))
+[(0, 1), (1, 2), (2, 3)]
+>>> result=dict()
+>>> print(result)
+{}
+def filterdata(x):  
+    if x>5:
+        return x  
+result = filter(filterdata,(1,2,6))  
+print(list(result))
+   [6]
+>>> result=hash(22.1)
+>>> print(hash)
+<built-in function hash>
+>>> result=hash(22.3)
+>>> print(result)
+691752902764109846
+>>> info=help()
+
+Welcome to Python 3.8's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at https://docs.python.org/3.8/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> small=min(2,1,7)
+>>> print(small)
+1
+>>> res=set('500')
+>>> print(res)
+{'0', '5'}
+>>> arch=hex(2)
+>>> print(arch)
+0x2
+>>>
+>>> val=id(2000)
+>>> print(val)
+1858110843376
+>>> res=slice(5)
+>>> print(res)
+slice(None, 5, None)
+>>> val=int(10.5)
+>>> str="kloudone"
+>>> sort=sorted(str)
+>>> print(sort)
+['d', 'e', 'k', 'l', 'n', 'o', 'o', 'u']
+>>> print(val)
+10
+>>> print(ord('K'))
+75
+>>> print(list(range(4)))
+[0, 1, 2, 3]
+>>> t=tuple('java')
+>>> print(t)
+('j', 'a', 'v', 'a')
+>>> print(list(reversed(t)))
+['a', 'v', 'a', 'j']
+>>> print(type(t))
+<class 'tuple'>
+>>> num=[1,2]
+>>> str=['one','two']
+>>> result=zip()
+>>> print(result)
+<zip object at 0x000001B09DB6BF40>
+>>> save=list(result)
+>>> print(save)
+[]
+>>> print("Task Completed Successfully")
+Task Completed Successfully 
